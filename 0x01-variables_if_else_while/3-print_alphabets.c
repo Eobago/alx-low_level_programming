@@ -2,23 +2,26 @@
 #include <stdlib.h>
 
 /**
- * main - returns alphabets both except e and q
+ * main - returns alphabets both lower and upper cases
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char ch = 'a';
+	int ch = 'a';
+	int CH = 'A';
 
 	while (ch <= 'z')
 	{
-		if ((ch != 'q') && (ch != 'e'))
-		{
-			putchar(ch);
-		}
+		putchar(ch);
 		ch++;
-
 	}
+	while (CH <= 'Z')
+	{
+		putchar(CH);
+		CH++;
+	}
+
 	putchar('\n');
 	return (0);
 }
