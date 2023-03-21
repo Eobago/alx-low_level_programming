@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * _isupper - checks uppercase
- * @c: parameter
- * Return: 0 if successful
+ * main - print _putchar
+ * written by obasi
+ * Return: 0 (sucess)
  */
-
-int _isupper(int c)
+int main(void)
 {
-	if (c >= 65 && c < 91)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+_putchar('-');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);
 }
+
