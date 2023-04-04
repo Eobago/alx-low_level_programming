@@ -2,9 +2,9 @@
 
  /**
  * char *_memcpy - copies n bytes from memory area src to memory area dest
- * @n: number of bytes
  * @dest: Destination
  * @src: Source
+ * @n: number of bytes
  * Return: pointer  to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
