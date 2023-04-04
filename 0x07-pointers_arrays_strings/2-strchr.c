@@ -3,9 +3,9 @@
 
 /**
  * _strchr - locate first occurrence of char in string and returns pointer there
- * @s: strings to search char
- * @c: target char
- * Return: pointer to that char in string
+ * @s: strings to search
+ * @c: target chacter
+ * Return: pointer to that charcter in string
  */
 char *_strchr(char *s, char c);
 {
