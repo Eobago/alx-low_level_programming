@@ -2,14 +2,16 @@
 #define NULL 0
 
 /**
- * _strchr - locate first occurrence of char in string and returns pointer there
+ * _strchr - locate 1st  occurrence of char in string and returns pointer there
  * @s: strings to search
- * @c: target chacter
+ * @c: target character
  * Return: pointer to that charcter in string
  */
+
 char *_strchr(char *s, char c);
 {
-	int i = 0;
+	int i = 0
+		;
 
 	while (s[i] != '\0' && s[i] != c)
 		i++;
@@ -17,6 +19,7 @@ char *_strchr(char *s, char c);
 	if (s[i] == c)
 
 		return (&s[i]);
+
 	else
 		return (NULL)
 }
