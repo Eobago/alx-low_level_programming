@@ -1,20 +1,21 @@
 #include "main.h"
+
 /**
- * helper - Finds the square root of two numbers
- * @a: The number
- * @b: The number to test for the square root of @a
+ * helper_guide - Finds the square root of two numbers
+ * @r: The number
+ * @e: The number to test for the square root of @a
  * Return: square root
  */
-int helper(int a, int b)
+int helper_guide(int r, int e)
 {
-	if (b * b > a)
+	if (e * e > r)
 		return (-1);
 
-	else if (b * b == a)
-		return (b);
+	else if (e * e == r)
+		return (e);
 
 	else
-		return (helper(a, b + 1));
+		return (helper_guide(r, e + 1));
 
 	return (1);
 }
@@ -27,6 +28,6 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
-	return (helper(n, 1));
+	return (helper_guide(n, 1));
 }
 
