@@ -3,14 +3,14 @@
 
 /**
  * str_concat - get ends of input and add together for size
- * @s1: input one to position
- * @s2: input two to position
- * Return: position of s1 and s2
+ * @s1: input one to concat
+ * @s2: input two to concat
+ * Return: concat of s1 and s2
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	char position;
+	char *conct;
 	int u, mv;
 
 	if (s1 == NULL)
@@ -23,9 +23,9 @@ char *str_concat(char *s1, char *s2)
 		u++;
 	while (s2[mv] != '\0')
 		mv++;
-	position = malloc(sizeof(char) * (u + mv + 1));
+	conct = malloc(sizeof(char) * (u + mv + 1));
 
-	if (position == NULL)
+	if (conct == NULL)
 		return (NULL);
 	u = mv = 0;
 	while (s1[u] != '\0')
@@ -36,10 +36,10 @@ char *str_concat(char *s1, char *s2)
 
 	while (s2[mv] != '\0')
 	{
-		position[u] = s2[mv];
+		conct[u] = s2[mv];
 		u++, mv++;
 	}
-	position[u] = '\0';
-	return (position);
+	conct[u] = '\0';
+	return (conct);
 }
 
